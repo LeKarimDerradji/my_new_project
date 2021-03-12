@@ -13,8 +13,6 @@ console.log('Il te convient de choisir ta ' + chalk.bold.blueBright('classe'))
 classesIndex = readlineSync.keyInSelect(classesTab, 'De quel ' + chalk.blueBright.bold('classe es-tu ? '))
 classe = classesTab[classesIndex]
 
-console.log(classe)
-
 switch (classe) {
     case 'Archer' :
         characModule.Archer.getClass()
@@ -38,10 +36,3 @@ switch (classe) {
 
 
 
-
-
-
-/*for (let i = 0; i < 10; i++) {
-    i % 2 === 0 ? console.log(chalk.cyanBright('Hello Hardfork')) : console.log(chalk.yellowBright('Hello Hardfork'))
-
-}*/
